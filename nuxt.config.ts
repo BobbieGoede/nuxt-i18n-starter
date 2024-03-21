@@ -1,6 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 	modules: ["@nuxtjs/i18n"],
+	devtools: { enabled: false },
 	i18n: {
 		lazy: true,
 		langDir: "locales",
