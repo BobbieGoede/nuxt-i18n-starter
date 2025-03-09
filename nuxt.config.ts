@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: ["@nuxtjs/i18n"],
   devtools: { enabled: false },
+
   i18n: {
     lazy: true,
     langDir: "locales",
@@ -27,6 +28,6 @@ export default defineNuxtConfig({
       },
     ],
     detectBrowserLanguage: false,
-    restructureDir: false,
+    vueI18n: "i18n.config.ts",
   },
 });
