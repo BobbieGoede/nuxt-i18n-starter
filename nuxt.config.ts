@@ -28,7 +28,6 @@ export default defineNuxtConfig({
       },
     ],
     detectBrowserLanguage: false,
-    restructureDir: false,
   },
 
   compatibilityDate: "2024-11-15",
