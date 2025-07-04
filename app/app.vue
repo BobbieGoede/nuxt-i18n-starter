@@ -19,16 +19,13 @@
 			<p>See logs - the merged locales array looks like:</p>
 			<pre>
 locales: [
-  { code: 'en', file: 'PATH/modules/2.second-module/locales/en.json' },
-  { code: 'en', file: 'PATH/modules/1.first-module/locales/en.json' },
-  { code: 'en', file: 'PATH/layers/my-layer/modules/3.third-module/locales/en.json' }
+  { code: 'en', file: 'en-3.json' },
+  { code: 'en', file: 'en-2.json' },
+  { code: 'en', file: 'en-1.json' }
 ],
 			</pre>
-			<p>The order is [2,1,3]</p>
-			<p>Only one of the `langDir` options is visible to the i18n module:</p>
-			<pre>
-langDir: 'PATH/nuxt-i18n-starter/modules/2.second-module/locales',
-			</pre>
+			<p>The order is [3,2,1]</p>
+			<p>The `langDir` is irrelevant, we extract it from `_layers`</p>
 		</section>
   </div>
 </template>

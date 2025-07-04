@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: [
-    // "@nuxtjs/i18n",
+    "@nuxtjs/i18n",
   ],
   vite: {
     optimizeDeps: {
@@ -10,10 +10,9 @@ export default defineNuxtConfig({
     },
   },
 
-  // i18n: {
-  //   locales: [{ code: "en", file: "en.json", comment: "This is from the project config" }],
-  //   detectBrowserLanguage: false,
-  // },
+  i18n: {
+    locales: [{ code: "en", file: "en-1.json" }],
+  },
 
   compatibilityDate: "2024-11-15",
 });
