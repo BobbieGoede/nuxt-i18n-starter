@@ -1,0 +1,5 @@
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+patchedDependencies:
+  '@nuxtjs/i18n': patches/@nuxtjs__i18n.patch

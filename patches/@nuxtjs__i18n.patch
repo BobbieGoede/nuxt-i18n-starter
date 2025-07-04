@@ -1,0 +1,12 @@
+diff --git a/dist/module.mjs b/dist/module.mjs
+index b6ab4b44d07b10015934aada534f95810b1162c9..d5954d46d8161798d8d1b2217aac951404d254c7 100644
+--- a/dist/module.mjs
++++ b/dist/module.mjs
+@@ -1894,6 +1894,7 @@ const module = defineNuxtModule({
+   },
+   defaults: DEFAULT_OPTIONS,
+   async setup(i18nOptions, nuxt) {
++    console.log('[nuxt-i18n] received options:', i18nOptions);
+     const ctx = createContext(i18nOptions);
+     prepareOptions(ctx, nuxt);
+     prepareAutoImports(ctx);
